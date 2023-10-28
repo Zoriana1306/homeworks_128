@@ -1,0 +1,36 @@
+* {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    background-color: silver;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.photo {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.social_links:hover {
+    color: green;
+  }
+
+.social_links:visited {
+    color: grey;
+  }
+
+.link_to_en:hover {
+  color: green;
+}
+
+.link_to_en:visited {
+    color: grey;
+  }
+
+.ex_items {
+    list-style-type: square;
+}
