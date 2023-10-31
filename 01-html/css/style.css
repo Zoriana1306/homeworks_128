@@ -1,26 +1,61 @@
 * {
-    font-family: 'Merriweather', serif;
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
 }
 
-body {
-    background-color: silver;
+.ukr-dark-theme {
+  background-color: black;
+  color: white;
+}
+
+.en-dark-theme {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  color: white;
+}
+
+.container {
+  width: min(90%, 1000px);
+  margin: 0 auto;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+} 
+
+nav {
+  border-bottom: 1px solid #828282;
+}
+
+h1 {
+  text-align: center;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .photo {
-    width: 200px;
-    border-radius: 10px;
+  width: 200px;
+  border-radius: 10px;
 }
 
 .social_links:hover {
-    color: green;
+  color: green;
   }
 
 .social_links:visited {
-    color: grey;
+  color: grey;
   }
 
 .link_to_en:hover {
@@ -28,9 +63,9 @@ ul {
 }
 
 .link_to_en:visited {
-    color: grey;
+  color: grey;
   }
 
 .ex_items {
-    list-style-type: square;
+  list-style-type: square;
 }
