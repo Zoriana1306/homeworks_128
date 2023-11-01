@@ -4,28 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Novik</title>
-    <style>
-        .container {
-            width: min(90%, 970px);
-            margin: 0 auto;
-        }
-        .footer-container {
-            width: 350px;
-            margin: 0 auto;        
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
      <header>
-        <div class="container">
+        <!-- Navigation -->
+        <div class="nav-container">
             <nav class="nav-section">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about-me">About me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a class="nav-item" href="#about-me">About me</a></li>
+                    <li><a class="nav-item" href="#skills">Skills</a></li>
+                    <li><a class="nav-item" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-item" href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
          </div>
@@ -41,7 +36,7 @@
         </section>
         
          <!-- Section "About me" --> 
-        <section id="about-me" class="about-me-section">
+        <section id="about-me" class="about-me-section grey-background">
             <div class="container">
                 <h2>About me</h2>
                 <div class="about-me-text">
@@ -118,22 +113,22 @@
         </section>
 
         <!-- Portfolio -->
-        <section id="portfolio" class="portfolio-section">
+        <section id="portfolio" class="portfolio-section grey-background">
             <div class="container">
                 <h2>Portfolio</h2>
                 <div class="portfolio-item">
-                    <img src="assets/images/fashion-store.jpg" alt="Fashion Store"><br>
-                    <a class="portfolio-link" href="#">Online fashion store - <br> Homepage</a>
+                    <img class="fashion-store-img" src="assets/images/fashion-store.jpg" alt="Fashion Store"><br>
+                    <a href="#">Online fashion store - <br> Homepage</a>
                 </div>
         
                 <div class="portfolio-item">
-                    <img src="assets/images/reebok_web.jpg" alt="Reebok"><br>
-                    <a class="portfolio-link" href="#">Reebok Store - Concept</a>
+                    <img class="reebok-img" src="assets/images/reebok_web.jpg" alt="Reebok"><br>
+                    <a href="#">Reebok Store - Concept</a>
                 </div>
         
                 <div class="portfolio-item">
-                    <img src="assets/images/braun-landing.jpg" alt="Braun"><br>
-                    <a class="portfolio-link" href="#">Braun Landing Page - Concept</a>
+                    <img class="braun-img" src="assets/images/braun-landing.jpg" alt="Braun"><br>
+                    <a href="#">Braun Landing Page - Concept</a>
                 </div>
             </div>
         </section>
@@ -143,8 +138,8 @@
      <footer>
         <section id="contacts" class="contact-section">
             <div class="footer-container">
-                <h3>Contacts</h3>
-                <p class="contact-text">Want to know more or just chat? 
+                <h2>Contacts</h2>
+                <p class="contact-text">Want to know more or just chat? <br>  
                     You are welcome!</p>
 
                 <div>   
