@@ -56,6 +56,11 @@ h2 {
 .nav-section a {
     text-decoration: none;
 }
+
+.nav-item-home {
+    color: var(--var-text-color);
+}
+
 .nav-item {
     color: var(--var-nav-color);
 }
@@ -129,7 +134,8 @@ h1 {
 }
 
 .portfolio-item a {
-    text-align: center;  
+    text-align: center; 
+    color: var(--var-text-color); 
 }
 
 .portfolio-section {
