@@ -8,13 +8,15 @@
 * {
     margin: 0;
     padding: 0;
+     
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 }
 
- /* General settings */
+ /* === General settings ===*/
 .container {
     width: min(90%, 970px);
     margin: 0 auto;
@@ -32,9 +34,17 @@ h2 {
     text-align: center;
     font-size: 34px;
     font-weight: 700;
+    line-height: 34px;
 }
 
-/* Navigation */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    vertical-align: top;
+}
+
+/* === Navigation === */
 .nav-container {
     width: min(99%, 970px);
     margin: 0 auto;
@@ -65,7 +75,7 @@ h2 {
     color: var(--var-nav-color);
 }
 
-/* Hero */
+/* === Hero === */
 .hero-section {
     margin-bottom: 0;
 }
@@ -82,7 +92,7 @@ h1 {
     vertical-align: top
 }
 
-/* Section "About me" */
+/* === About me === */
 #about-me {
     margin-top: 0;
 }
@@ -102,13 +112,76 @@ h1 {
     padding-bottom: 100px;
 }
 
-/*  Skills */
-#skills h2 {
-    padding-top: 100px;
-    padding-bottom: 20px;
+/* === Skills === */
+#skills {
+    padding: 100px 0 101px;
 }
 
-/* Portfolio */
+#skills h2 {
+    margin-bottom: 20px;
+}
+
+.skills-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills-section li {
+    display: inline-block;
+    margin-right: 96.5px;
+    width: 170px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.skills-section li.last {
+    margin-right: 0;
+}
+
+.skills-info {
+    font-size: 0;
+}
+.skills-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    aspect-ratio: 1;
+}
+
+.skills-title {
+    text-align: center;
+    color: var(--var-nav-color);
+    font-weight: 700;
+    letter-spacing: 0.28px;
+    margin-bottom: 60px;
+    padding: 0 30px; 
+}
+
+.skills-section li.last .skills-title {
+    margin-bottom: 80px;
+}
+
+.skills-rating {
+    font-size: 0;
+}
+
+.star {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    min-width: 10px;
+    background: url(../assets/images/black-star.png) 50% 50%/26px auto no-repeat;
+}
+
+.skills-rating .star:last-child {
+    margin-right: 0;
+}
+
+.grey {
+    opacity: 0.1;
+}
+
+/* === Portfolio ===*/
 #portfolio .container {
     text-align: center;
     background: var(--var-background-color);
@@ -142,31 +215,42 @@ h1 {
     padding-bottom: 100px;
 }
 
-/* Footer */
-.footer-container {
-    margin: 0 auto;  
-    text-align: center;      
-}
-
+/*=== Footer ===*/
 .contact-section {
     margin-top: 100px;
     padding-bottom: 20px;
 }
 
+.footer-container {
+    margin: 0 auto;  
+    text-align: center;      
+}
+.footer-container h2 {
+    margin-bottom: 20px;
+}
 .contact-text {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 button {
     background: var(--var-text-color);
+    color: var(--var-primary-color);
     display: inline-block;
-    width: 180px;
+    border: 1px solid #000;
+    min-width: 180px;
+    text-align: center;
+    padding: 10px 16px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 44px;
-    color: var(--var-primary-color);
     border-radius: 22px;
     letter-spacing: 1.8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .contact-soc-items ul li {
