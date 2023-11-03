@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Homework</title>
+</head>
+
+<body>
+<main>
+    <h1>Extra Homework. Forms</h1>
+        <form action="#" method="post" enctype="multipart/form-data">  
+            <!-- !!! Question for the teacher: тут вірно використала enctype="multipart/form-data"? Чи потрібно вказати безпосередньо в рядку, де <input type="file">?-->
+           <fieldset>
+               <legend><b>Частина І.</b> <i>Персональна анкета фізичних даних</i></legend>
+               <br>
+                    <label for="photo">Ваше фото: </label>
+                    <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
+                    <br>
+                    <br>
+                    <label for="hight">Зріст, см: </label>
+                    <input type="number" id="hight" min="50" max="230" step="1" value="">
+                    <br>
+                    <br>
+                    <label for="weight">Вага, кг: </label>
+                    <input type="number" id="weight" min="1" max="300" step="1" value="">
+               <br>
+               <br>
+               <label for="eye-colour">Колір очей: </label>
+                    <select name="eye-colour" id="eye-colour">
+                        <option value="">Обрати варіант:</option>
+                        <option value="brown">Карі</option>
+                        <option value="green">Зелені</option>
+                        <option value="blue">Блакитні</option>
+                        <option value="grey">Сірі</option>
+                    </select>
+               <br>
+               <br>
+                    <label for="date-of-completing">Дата заповнення анкети: </label>
+                    <input name="date" id="date-of-completing" type="date">
+               <br>
+               <br>
+                    <label for="checkbox-1">
+                    <input type="checkbox" id="checkbox-1" name="checkbox-1"> Всі дані заповнено вірно та відповідають дійсності
+                    </label>
+               <br>
+               <br>
+                    <button type="reset">Очистити форму</button>
+                    <button type="submit">Зареєструватися</button>
+            </fieldset>
+   
+       <br>
+   
+            <fieldset>
+                <legend><b>Частина ІI.</b> <i>Сімейний стан</i></legend>
+                <p>Сімейний стан:</p>  
+                    <select name="marital-status" id="marital-status">
+                        <option value="">Обрати варіант:</option>
+                        <option value="not-married">не одружений(а)</option>
+                        <option value="married">одружений(заміжня)</option>
+                        <option value="divorced">розлучений(а)</option>
+                        <option value="widower-widow">вдівець(вдова)</option>
+                        <option value="civil-marriage">цивільний шлюб</option>
+                        <option value="another-option">інший варіант</option>
+                    </select>
+                    <br>
+                    <br>
+                    <textarea name="another-option" id="another-option" placeholder="інший варіант"></textarea>
+                <br>
+                <p>Діти: </p>    
+                    <input type="radio" id="childrenchoise1" name="children" value="yes">
+                    <label for="childrenchoise1">є</label>
+                    <input type="radio" id="childrenchoise2" name="children" value="no">
+                    <label for="childrenchoise2">немає</label>
+                <br>
+                <p>Контактні дані довіреної особи: </p>
+                    <label for="surname">Прізвище та ім'я: </label>
+                    <input type="text" id="surname">
+                    <label for="phone-number"><i>+380</i></label>
+                    <input type="tel" id="phone-number" required>
+                <br>
+                <br>
+                    <label for="checkbox-2"><input type="checkbox" id="checkbox-2" name="checkbox-2"> Всі дані заповнено вірно та відповідають дійсності
+                    </label>
+                <br>
+                <br>
+                    <button type="reset">Очистити форму</button>
+                    <button type="submit">Зареєструватися</button>
+            </fieldset>
+     </form>
+</main>
+</body>
+</html>

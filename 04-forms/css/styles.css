@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: min(90%, 500px);
+    margin: 0 auto;
+    background-color: #DCDCDC;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    display: inline-block;
+    width: 200px;
+}
+
+.agree-btn {
+    font-size: 11px;
+}
+
+button {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    border-right: 1px solid grey;
+}
+
+.btn {
+    display: inline-block;
+    margin: 30px 30px;
+}
+
+
+ /*=== Homework Extra ===*/
+
+.extra-homework {
+    
+}
