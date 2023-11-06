@@ -1,0 +1,158 @@
+/*=== General settings ===*/
+
+:root {
+    --var-bg-color: #3B3F45;
+    --var-secondary-color: #4A4F56;
+    --var-item1-color:#88839E;
+    --var-item2-color:#7A7593;
+    --var-hover-color: #625E77;
+    --var-red-text: #FF8984;
+    --var-white-text: #FFF;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/*=== Header ===*/
+
+.title {
+    text-align: center;
+    color: var(--var-red-text);
+    background-color: var(--var-secondary-color);
+    padding: 23px 391px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;  
+    padding-top: 6px; 
+}
+
+p.title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/*=== Menu ===*/
+.container-menu {
+    background-color: var(--var-bg-color);
+}
+
+.list-items {
+    color: var(--var-white-text);
+    font-weight: 400;
+    padding: 40px 200px;
+}
+
+.list {
+    padding-left: 15px;
+}
+
+li {
+    padding: 18px;
+}
+
+small {
+    font-size: 17px;
+    line-height: 22px;
+    padding-left: 15px;
+    padding: 23px;
+    padding: 23px;
+    vertical-align: middle;
+} 
+
+label:not(small) {
+    font-size: 27px;
+    line-height: 32px;
+}
+
+li:nth-child(odd) {
+    background-color: var(--var-item1-color);
+}
+
+li:nth-child(even) {
+    background-color: var(--var-item2-color);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    padding-left: 43px;
+    position: relative;
+}
+
+input[type="checkbox"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 2px solid white;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    rotate: -45deg;
+    position: absolute;
+    left: 7px;
+    top: 4px;
+}
+
+[type="checkbox"]:checked + label {
+    color: #9B96AC;
+    text-decoration-line: line-through;
+}
+
+li:hover {
+    background-color: var(--var-hover-color);
+    cursor: pointer;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transition: all .3s ease-in;
+}
+
+li:active {
+    background-color: var(--var-red-text);
+    opacity: 0.6;
+}
+
+/*=== Button ===*/
+button {
+    font-family: Roboto, sans-serif;
+    color: var(--var-red-text);
+    background-color: var(--var-secondary-color);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 40px 200px 100px;
+    padding: 16px 317px;
+}
+
