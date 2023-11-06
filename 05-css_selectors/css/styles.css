@@ -134,7 +134,7 @@ input[type="checkbox"]:checked + label::after {
 li:hover {
     background-color: var(--var-hover-color);
     cursor: pointer;
-    border-left: 2px solid white;
+    border-top: 2px solid white;
     border-bottom: 2px solid white;
     transition: all .3s ease-in;
 }
