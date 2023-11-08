@@ -21,12 +21,17 @@ body {
     background: #39C;
     font-size: 16px;
     font-weight: 400;
+    cursor: url('../assets/cursor.png'), auto;
 }
 
 h1 {
     font-size: 1.3125rem;
     font-weight: 400;
     margin: 66px 1081px 40px 135px;
+}
+
+h1 .wi {
+    font-size: 1.6875rem;
 }
 
 /* === Main content === */
@@ -52,6 +57,10 @@ li {
     display: inline-block;
     padding-top: 26px;
     padding-bottom: 40px;
+}
+
+.wi {
+    font-size: 2.625rem; 
 }
 
 /* Lisbon */
@@ -128,12 +137,16 @@ li:nth-child(10) {
 /* Sydney */
 li:nth-child(11) {
     border: 2px solid #FFF;
-    background:  #669;
+    background: #669;
     width: 100%;
 }
 
-li:hover {
-    opacity: 0.7;
+.white-wrapper:hover li {
+    opacity: 0.5;
+}
+
+.white-wrapper li:hover {
+    opacity: 1;
     transition: all .1s ease-in;
 }
 
