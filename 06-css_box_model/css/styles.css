@@ -13,10 +13,9 @@ body {
 
 /* === Header === */
 .container {
-    width: min(90% 1400px);
+    width: min(90% 1000px);
     margin-inline: auto;
     width: 100%;
-    display: inline-block;
     border: 25px solid #2B81AC;
     background: #39C;
     font-size: 16px;
@@ -44,6 +43,7 @@ ul {
     margin: 0 135px;
     display: inline-block;
     font-size: 0;
+    border: 2px solid white;
 }
 
 .cities {
@@ -57,10 +57,18 @@ li {
     display: inline-block;
     padding-top: 26px;
     padding-bottom: 40px;
+    
+}
+
+span {
+    margin-right: 17px;
+    margin-bottom: 19px;
 }
 
 .wi {
     font-size: 2.625rem; 
+    margin-top: 4px;
+    vertical-align: middle;
 }
 
 /* Lisbon */

@@ -18,11 +18,13 @@
 
 body {
     font-family: Roboto, sans-serif;
+    background-color: #3B3F45;
 }
 
 .container {
-    height: 100%;
+    width: min(90% 800px);
     width: 100%;
+    margin: 0 auto;
 }
 
 ul {
@@ -86,10 +88,14 @@ label:not(small) {
 
 li:nth-child(odd) {
     background-color: var(--var-item1-color);
+    border-top: 2px solid var(--var-item1-color);
+    border-bottom: 2px solid var(--var-item1-color);
 }
 
 li:nth-child(even) {
     background-color: var(--var-item2-color);
+    border-top: 2px solid var(--var-item2-color);
+    border-bottom: 2px solid var(--var-item2-color);
 }
 
 input[type="checkbox"] {
@@ -154,5 +160,6 @@ button {
     font-weight: 400;
     margin: 40px 200px 100px;
     padding: 16px 317px;
+    border: 0;
 }
 

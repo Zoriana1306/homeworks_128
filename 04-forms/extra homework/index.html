@@ -10,7 +10,6 @@
 <main>
     <h1>Extra Homework. Forms</h1>
         <form action="#" method="post" enctype="multipart/form-data">  
-            <!-- !!! Question for the teacher: тут вірно використала enctype="multipart/form-data"? Чи потрібно вказати безпосередньо в рядку, де <input type="file">?-->
            <fieldset>
                <legend>АНКЕТА КАНДИДАТА</legend>
                <h4><b>Частина І.</b> <i>Персональна анкета фізичних даних</i></h4>
@@ -69,9 +68,9 @@
                 <br>
                 <p>Контактні дані довіреної особи: </p>
                     <label for="surname">Прізвище та ім'я: </label>
-                    <input type="text" id="surname">
+                    <input type="text" id="surname" name="surname">
                     <label for="phone-number"><i>+380</i></label>
-                    <input type="tel" id="phone-number" required>
+                    <input type="tel" id="phone-number" name="phone-number" required>
                 <br>
                 <br>
                     <label for="checkbox-2"><input type="checkbox" id="checkbox-2" name="checkbox-2"> Всі дані заповнено вірно та відповідають дійсності
