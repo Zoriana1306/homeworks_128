@@ -1,0 +1,13 @@
+//Змінні
+$primary-color: black;
+$max-wdth: 1200px;
+
+
+//Імпорт
+@import 'variables.scss';
+
+
+body {
+    color: $primary-color;
+
+}

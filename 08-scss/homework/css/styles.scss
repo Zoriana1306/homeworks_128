@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import '../../homework/css/variables';
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+//Block I
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: min(90%, 1170px);
+    margin: 0 auto;
+    margin-top: 121px;
+    margin-bottom: 122px;
+    h3 {
+        color: $text-color2;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        padding-bottom: 15px;
+    }
+    h1 {
+        color: $line-color;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3.75rem;
+        font-weight: 900;
+        line-height: 4.125rem;
+        padding-bottom: 40px;
+    }
+    .line1 {
+        content: '';
+        border-bottom: 1px solid $line-color;
+        width: 210px;
+        
+    }
+    img {
+        width: 20px;
+        height: 20px;
+        padding-bottom: 0;
+    }
+    .line2 {
+        content: '';
+        border-bottom: 1px solid $line-color;
+        width: 210px;
+    }
+}
+
+.figure-lines {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+}
+
+//Block II
+.page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 85px;
+}
+
+.line-photo-wrap {
+
+    img {
+        width: 400px;
+        height: 400px;
+        padding-left: 85px;
+        padding-bottom: 80px;
+    }
+}
+
+.info-main-line {
+    content: '';
+    border-right: 1px solid $line-color;
+    width: 1px;
+    height: 560px;
+    color: $line-color;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        span {
+            color: $text-color1;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 2.25rem;
+            font-weight: 900;
+            text-transform: capitalize;
+            padding-bottom: 30px;
+        }
+        .info-line {
+            content: '';
+            border-top: 1px solid $line-color;
+            width: 100px;
+            height: 1px;
+            padding-top: 30px;
+        }
+        h4 {
+            color: $text-color1;
+            text-align: center;
+            font-family: Raleway;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2.25rem;
+            text-transform: capitalize; 
+            padding-bottom: 30px;
+        }
+}
+
+.socials {
+    display: flex;
+    gap: 5px;
+    padding-bottom: 49px;
+}
+
+p {
+    color: #333;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.info-line2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 5px;
+    padding-bottom: 25px;
+        .box-1 {
+            content: '';
+            border-top: 4px solid $line-color;
+            width: 10px;
+            height: 4px;
+        }
+        .box-2 {
+            content: '';
+            border-top: 4px solid $line-color;
+            width: 20px;
+            height: 4px;
+        }
+        .box-3 {
+            content: '';
+            border-top: 4px solid $line-color;
+            width: 10px;
+            height: 4px;
+        }
+
+}
+.button a {
+    display: inline-flex;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $line-color;
+    color: $text-color1;
+    text-decoration: none;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 0.875rem; 
+    text-transform: uppercase;
+}
