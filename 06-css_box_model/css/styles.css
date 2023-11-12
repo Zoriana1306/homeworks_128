@@ -13,7 +13,7 @@ body {
 
 /* === Header === */
 .container {
-    width: min(90% 1000px);
+    width: min(90%, 1166px);
     margin-inline: auto;
     width: 100%;
     border: 25px solid #2B81AC;
@@ -43,11 +43,11 @@ ul {
     margin: 0 135px;
     display: inline-block;
     font-size: 0;
-    border: 2px solid white;
 }
 
 .cities {
     background-color: white;
+    border: 2px solid white;
 }
 
 li {
@@ -57,7 +57,7 @@ li {
     display: inline-block;
     padding-top: 26px;
     padding-bottom: 40px;
-    
+    border: 2px solid;
 }
 
 span {
@@ -71,90 +71,76 @@ span {
     vertical-align: middle;
 }
 
+
+.w25 {
+    width: 25%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w100 {
+    width: 100%;
+}
+
 /* Lisbon */
 li:nth-child(1) {
-    background-color: #fff;
-    border: 2px solid #FFF;
     background: #39C;
-    width: 50%;
 }
 
 /* Paris */
 li:nth-child(2) {
-    border: 2px solid #FFF;
     background: #3CC;
-    width: 25%;
 }
 
 /* Belgrade */
 li:nth-child(3) {
-    border: 2px solid #FFF;
     background: #969;
-    width: 25%;
 }
 
 /* Venice */
 li:nth-child(4) {
-    border: 2px solid #FFF;
     background:  #C24747;
-    width: 25%;
 }
 
 /* Tel-Avive */
 li:nth-child(5) {
-    border: 2px solid #FFF;
     background: #E2674A;
-    width: 25%;
 }
 
 /* Cair */
 li:nth-child(6) {
-    border: 2px solid #FFF;
     background: #FC6;
-    width: 25%;
 }
 
 /* New-York */
 li:nth-child(7) {
-    border: 2px solid #FFF;
     background: #9C9;
-    width: 25%;
 }
 
 /* New-Delhi */
 li:nth-child(8) {
-    border: 2px solid #FFF;
     background: #699;
-    width: 25%;
 }
 
 /* San-Francisco */
 li:nth-child(9) {
-    border: 2px solid #FFF;
     background: #C69;
-    width: 50%;
 }
 
 /* Tokyo */
 li:nth-child(10) {
-    border: 2px solid #FFF;
     background:  #396;
-    width: 25%;
 }
 
 /* Sydney */
 li:nth-child(11) {
-    border: 2px solid #FFF;
     background: #669;
-    width: 100%;
 }
 
-.white-wrapper:hover li {
-    opacity: 0.5;
-}
-
-.white-wrapper li:hover {
-    opacity: 1;
+.white-wrapper:hover li:not(:hover) {
+    opacity: 0.7;
     transition: all .1s ease-in;
 }
 
