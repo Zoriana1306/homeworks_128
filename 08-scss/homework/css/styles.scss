@@ -174,11 +174,20 @@ body {
 .socials {
     display: flex;
     gap: 5px;
-    padding-bottom: 49px;
+    margin-bottom: 49px;
+    border: 2px solid white;
     img {
         width: 30px;
         height: 30px;
+        padding-bottom: 0;
     }
+}
+
+.socials:hover {
+    cursor: pointer;
+    border: 1px solid $text-color2;
+    background-color: $line-color;
+    transition: all .1s ease-in;
 }
 
 p {
@@ -230,4 +239,10 @@ p {
     font-weight: 700;
     line-height: 0.875rem; 
     text-transform: uppercase;
+}
+
+.button a:hover {
+    border: 1px solid $text-color2;
+    background-color: $line-color;
+    transition: all .1s ease-in;
 }
