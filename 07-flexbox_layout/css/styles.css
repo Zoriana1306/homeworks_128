@@ -101,7 +101,6 @@ li {
     background-color: #fff;
     cursor: pointer;
     transition: all .3s ease-in;
-    margin-bottom: 74px;
     border: 1px solid var(--var-buttons-blue-color);
 }
 
@@ -137,13 +136,10 @@ h1 {
 }
 
 /* === Main. Section 1 === */
-.container-section1 {
-    margin-bottom: 104px;
-}
-
 h2 {
     text-align: center;
-    margin: 1px 330px 31px 331px;
+    margin-top: 1px;
+    margin-bottom: 31px;
 }
 
 .background-image {
@@ -151,7 +147,10 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 388px;
+    padding-bottom: 4px;
+    overflow: visible;
+    min-width: 100%;
+    margin: 0 auto;
 }
 
 /* -icons start- */
@@ -258,6 +257,7 @@ h2 {
 
 /* === Footer === */
 .container-footer {
+    margin-top: 104px;
     margin-bottom: 70px;
 }
 
