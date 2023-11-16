@@ -1,3 +1,4 @@
+/* === General settings === */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,10 @@ body {
     font-family: 'Lucida Sans Unicode', sans-serif;
     color: white;
 }
+
+ul {
+    list-style: none;
+} 
 
 /* === Header === */
 .container {
@@ -34,11 +39,6 @@ h1 .wi {
 }
 
 /* === Main content === */
-
-ul {
-    list-style: none;
-}
-
 .white-wrapper {
     margin: 0 135px;
     display: inline-block;
@@ -70,7 +70,6 @@ span {
     margin-top: 4px;
     vertical-align: middle;
 }
-
 
 .w25 {
     width: 25%;

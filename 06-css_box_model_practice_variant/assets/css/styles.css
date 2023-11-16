@@ -1,0 +1,110 @@
+@import 'weather-icons.min.css';
+@font-face {
+  font-family: "Lucida";
+  src: url("../font/Lucida Sans Unicode Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida", sans-serif;
+  background-color: #39C;
+  border: 25px solid #2B81AC;
+  min-height: 100vh;
+  color: #fff;
+  font-size: 1rem;
+}
+
+main {
+  padding-top: 41px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: min(90%, 1170px);
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 37px;
+  font-size: 1.3125em;
+  font-weight: 400;
+}
+
+.list {
+  margin-bottom: 35px;
+  padding: 2px;
+  background-color: #fff;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list:hover li:not(:hover) {
+  opacity: 0.7;
+}
+.list li {
+  width: 25%;
+  padding: 2px;
+  transition: all 0.2s ease;
+}
+.list li .city {
+  height: 120px;
+  border-color: tomato;
+  text-align: center;
+  padding: 24px 0 25px;
+  font-size: 1.375rem;
+}
+.list li .city.blue {
+  background-color: #39c;
+}
+.list li .city.cian {
+  background-color: #3cc;
+}
+.list li .city.violet {
+  background-color: #969;
+}
+.list li .city.red {
+  background-color: #c24747;
+}
+.list li .city.orange {
+  background-color: #e2674a;
+}
+.list li .city.yellow {
+  background-color: #fc6;
+}
+.list li .city.lightgreen {
+  background-color: #9c9;
+}
+.list li .city.gray {
+  background-color: #699;
+}
+.list li .city.pink {
+  background-color: #c69;
+}
+.list li .city.green {
+  background-color: #396;
+}
+.list li .city.darkviolet {
+  background-color: #669;
+}
+.list li .city .title {
+  margin-bottom: 4px;
+}
+.list li .city .temp-icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+.list li .city .wi {
+  font-size: 2.625rem;
+  vertical-align: middle;
+  margin-left: 11px;
+}
+.list li.w50 {
+  width: 50%;
+}
+.list li.w100 {
+  width: 100%;
+}
