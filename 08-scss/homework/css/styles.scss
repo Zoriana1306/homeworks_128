@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
-@import '../../homework/css/variables';
+@import 'variables.scss';
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style-type: none;
 }
 
 //Block I
@@ -41,7 +43,6 @@ body {
         padding-bottom: 40px;
     }
     .line1 {
-        content: '';
         border-bottom: 1px solid $line-color;
         width: 210px;
         margin-bottom: 10px;
@@ -53,7 +54,6 @@ body {
         padding-bottom: 0;
     }
     .line2 {
-        content: '';
         border-bottom: 1px solid $line-color;
         width: 210px;
         margin-bottom: 10px;
@@ -78,7 +78,6 @@ body {
 
 .top-frame {
     .angle-left-top {
-        content: '';
         border-top: 1px solid $line-color;
         border-left: 1px solid $line-color;
         width: 100px;
@@ -90,7 +89,6 @@ body {
         // margin-bottom: 315px;
     }
     .angle-right-top {
-        content: '';
         border-top: 1px solid $line-color;
         border-right: 1px solid $line-color;
         width: 100px;
@@ -103,7 +101,6 @@ body {
 
 .bottom-frame {
     .angle-left-bottom {
-        content: '';
         border-bottom: 1px solid $line-color;
         border-left: 1px solid $line-color;
         width: 100px;
@@ -113,7 +110,6 @@ body {
         // margin-left: 315px;
     }
     .angle-right-bottom {
-        content: '';
         border-bottom: 1px solid $line-color;
         border-right: 1px solid $line-color;
         width: 100px;
@@ -130,7 +126,6 @@ body {
 }
 
 .middle-line {
-    content: '';
     border-right: 1px solid $line-color;
     width: 1px;
     height: 560px;
@@ -153,7 +148,6 @@ body {
             padding-bottom: 30px;
         }
         .info-line {
-            content: '';
             border-top: 1px solid $line-color;
             width: 100px;
             height: 1px;
@@ -173,6 +167,7 @@ body {
 
 .socials {
     display: flex;
+    flex-direction: row;
     gap: 5px;
     margin-bottom: 49px;
     border: 2px solid white;
@@ -183,12 +178,24 @@ body {
     }
 }
 
-.socials:hover {
+.socials a:hover {
     cursor: pointer;
-    border: 1px solid $text-color2;
-    background-color: $line-color;
-    transition: all .1s ease-in;
 }
+
+// Невдала "нрутилка" :-(
+// .socials img:hover {
+//     cursor: pointer;
+//     animation: spin 2s infinite linear;
+// }
+// 
+// @keyframes spin {
+//     fron {
+//         transform:rotate(0deg);
+//     }
+//     to {
+//         transform:rotate(360deg);
+//     }
+// }
 
 p {
     color: #333;
@@ -206,19 +213,16 @@ p {
     gap: 5px;
     padding-bottom: 25px;
         .box-1 {
-            content: '';
             border-top: 4px solid $line-color;
             width: 10px;
             height: 4px;
         }
         .box-2 {
-            content: '';
             border-top: 4px solid $line-color;
             width: 20px;
             height: 4px;
         }
         .box-3 {
-            content: '';
             border-top: 4px solid $line-color;
             width: 10px;
             height: 4px;

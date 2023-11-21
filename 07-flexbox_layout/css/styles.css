@@ -27,13 +27,10 @@ li {
 }
 
 /* === Navigation === */
-.header-container {
+.header-nav {
     margin-top: 1px;
     margin-bottom: 99px;
     height: 80px;
-}
-
-.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,10 +167,6 @@ h2 {
 
 .item-cursor {
     content: '';
-    border-top: 1px solid  #7752BE;
-    border-right: 1px solid  #7752BE;
-    border-bottom: 1px solid  #7752BE;
-    border-left: 1px solid  #7752BE;
     width: 50px;
     height: 50px;
     border-radius: 15px;
@@ -188,10 +181,6 @@ h2 {
 
 .item-wave {
     content: '';
-    border-top: 1px solid #FAB005;
-    border-right: 1px solid #FAB005;
-    border-bottom: 1px solid #FAB005;
-    border-left: 1px solid  #FAB005;
     width: 50px;
     height: 50px;
     border-radius: 15px;
@@ -206,10 +195,6 @@ h2 {
 
 .item-heart {
     content: '';
-    border-top: 1px solid #F03E3D;
-    border-right: 1px solid #F03E3D;
-    border-bottom: 1px solid #F03E3D;
-    border-left: 1px solid #F03E3D;
     width: 50px;
     height: 50px;
     border-radius: 15px;
@@ -224,10 +209,6 @@ h2 {
 
 .item-clock {
     content: '';
-    border-top: 1px solid  #4DADF7;
-    border-right: 1px solid  #4DADF7;
-    border-bottom: 1px solid  #4DADF7;
-    border-left: 1px solid   #4DADF7;
     width: 50px;
     height: 50px;
     border-radius: 15px;
