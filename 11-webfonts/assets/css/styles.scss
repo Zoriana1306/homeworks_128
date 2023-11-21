@@ -1,0 +1,108 @@
+// General Settings
+@import '_general.scss';
+
+@import '_fonts.scss';
+
+$primary-text-color:  #000;
+
+body {
+    margin-top: 0;
+    margin-bottom: 90px;
+}
+
+// Web Fonts
+.pt_sans_normal {
+    font-family: 'PT Sans Normal';
+}
+.pt_sans_italic {
+    font-family: 'PT Sans Italic';
+}
+.pt_sans_bold {
+    font-family: 'PT Sans Bold';
+}
+.francois_one {
+    font-family: 'Francois One';
+}
+.farro {
+    font-family: 'Farro';
+}
+.staatliches {
+    font-family: 'Staatliches';
+}
+.tourney {
+    font-family: 'Tourney';
+}
+
+// Header
+.navigation {
+    height: 80px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        .item-eng {
+            @extend .tourney;
+            color: $primary-text-color;
+            font-size: 1.375rem;
+            font-weight: 600;
+            line-height: 1.125rem; 
+            letter-spacing: 0.055rem;
+        }
+        .item-doc {
+            @extend .staatliches;
+            color: $primary-text-color;
+            font-size: 1.375rem;
+            font-weight: 400;
+            letter-spacing: 0.04125rem;
+        }
+    }   
+}
+.navigation img {
+    width: 238px;
+    height: 54px;
+}
+
+// Main
+h2 {
+    @extend .francois_one;
+    color: $primary-text-color;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0.09rem;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    sup {
+        @extend .farro;
+        color: $primary-text-color;
+        font-size: 1.1rem;
+        font-weight: 300;
+        letter-spacing: 0.075rem;
+        padding-top: 0;
+        padding-left: 10px;
+        text-transform: none;
+    }
+}
+
+article {
+    margin-bottom: 30px;
+    p {
+        @extend .pt_sans_normal;
+        color: $primary-text-color;
+        font-size: 1.75rem;
+        font-weight: 400;
+        line-height: 3rem;
+        padding-bottom: 40px;
+    }
+    .underline {
+        text-decoration-line: underline;
+    }
+    .bg-color {
+        background-color: #D8D7DA;
+    }
+}
