@@ -9,7 +9,7 @@ body {
   background: #FFF;
 }
 
-ul {
+ul, li, a {
   list-style: none;
 }
 
