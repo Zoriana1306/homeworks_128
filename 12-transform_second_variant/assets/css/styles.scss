@@ -131,6 +131,7 @@ section {
         transform: rotateY(180deg);
     }
 }
+
 .grey, .black {
     display: flex;
     justify-content: center;
@@ -150,7 +151,6 @@ section {
     transform: rotateY(360deg);
     // filter: invert(1); (не зрозумію, куди додати цю властивість негативу?)
 }
-
 
 .line-top {
     border-top: 1px solid #BFBFBF;
