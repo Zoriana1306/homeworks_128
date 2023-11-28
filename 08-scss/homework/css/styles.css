@@ -72,37 +72,6 @@ li {
   gap: 85px;
 }
 
-.top-frame .angle-left-top {
-  border-top: 1px solid #FFCC00;
-  border-left: 1px solid #FFCC00;
-  width: 100px;
-  height: 100px;
-  margin: 0;
-}
-.top-frame .angle-right-top {
-  border-top: 1px solid #FFCC00;
-  border-right: 1px solid #FFCC00;
-  width: 100px;
-  height: 100px;
-  margin-left: 330px;
-  margin-right: 85px;
-  margin-bottom: 0px;
-}
-
-.bottom-frame .angle-left-bottom {
-  border-bottom: 1px solid #FFCC00;
-  border-left: 1px solid #FFCC00;
-  width: 100px;
-  height: 100px;
-}
-.bottom-frame .angle-right-bottom {
-  border-bottom: 1px solid #FFCC00;
-  border-right: 1px solid #FFCC00;
-  width: 100px;
-  height: 100px;
-  margin-left: 315px;
-}
-
 .page img {
   width: 400px;
   height: 400px;
@@ -217,4 +186,39 @@ p {
   border: 1px solid #898F8F;
   background-color: #FFCC00;
   transition: all 0.1s ease-in;
+}
+
+.photo-in-frame {
+  position: relative;
+}
+.photo-in-frame .top-left {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+.photo-in-frame .top-right {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+.photo-in-frame .photo {
+  width: 100%;
+}
+.photo-in-frame .bottom-left {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+}
+.photo-in-frame .bottom-right {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
 }

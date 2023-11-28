@@ -1,0 +1,89 @@
+// General Settings
+@import 'general';
+
+@import 'fonts';
+
+.page-wrapper {
+    background:  #e6e6e6;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.tudors-matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    img {
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+    }
+}
+
+// Шпаргалочка: transform: matrix(scaleX, scaleY, skewX, skewY, translateX, translateY);
+.item1 {
+    transform: matrix(0,6, 0,6, 0,6, 1.4, 0, 25);
+    &:hover {
+        transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+        transition: all 1s ease;
+    }
+}
+
+.item2 {
+    transform: matrix(1, 0, 1, 1, 20, 20);
+    &:hover {
+        transform: matrix(1.2, 0, 0, 0.9, 12, 20);
+        transition: all 1s ease;
+    }
+}
+
+// Згенерувала з CSS Generator - Matrix Transform
+.item3 {
+    transform:matrix(-1.60,0.00,-0.00,-1.00,0,0);
+    &:hover {
+        transform:matrix(1.60,-0.00,0.00,1.00,0,0);
+        transition: all 1s ease;
+    }
+}
+
+
+// Дві заготовки з інтернету
+.item4 {
+    transform:
+        perspective(900px)
+        rotateX(60deg)
+        scale(0.7);
+    box-shadow: 0px 20px 100px #555;
+    transition: 0.5s ease all;
+      &:hover {
+        transform:
+         rotate(0deg)
+         scale(1)
+         translateY(10px);
+        }
+}
+
+.item5 {
+    transform:
+        perspective(800px)
+        rotateY(25deg) scale(0.9)
+        rotateX(10deg);
+        filter: blur(2px);
+        opacity: 0.5;
+        transition: 0.6s ease all;
+        &:hover {
+          transform:
+            perspective(800px)
+            rotateY(-15deg)
+            translateY(-50px)
+            rotateX(10deg)
+            scale(1);
+          filter: blur(0);
+          opacity: 1;
+        }
+}
+
+
+
