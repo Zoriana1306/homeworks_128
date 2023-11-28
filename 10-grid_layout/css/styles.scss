@@ -1,6 +1,15 @@
-@import 'general.scss';
+@import 'general';
+
+@import 'fonts';
 
 $primary-text-color: #000; 
+
+.delius {
+    font-family: 'Delius';
+}
+.roboto {
+    font-family: 'Roboto';
+}
 
 .wrap {
     margin-bottom: 120px;
@@ -8,7 +17,8 @@ $primary-text-color: #000;
 }
 
 .title {
-    color:$primary-text-color;
+    @extend .delius;
+    color: $primary-text-color;
     text-align: center;
     font-size: 2.25rem;
     font-weight: 400;
@@ -24,66 +34,26 @@ $primary-text-color: #000;
 .blockI-items, .blockII-items {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(4, 370px);
+    grid-template-columns: repeat(3, 370px);
     grid-template-rows: repeat(3, 370px);
     margin-bottom: 120px;
 }
 
-.el-1, .el-5, .el-7 {
-grid-column: 1 / span 1;
+// Перероблений варіант
+.colspan {
+    grid-column: span 2;
 }
-
-.el-3, .el-11 {
-grid-column: 1 / span 2;
-}
-
-.el-2, .el-6, .el-8 {
-grid-column: 2 / span 2;
-}
-
-.el-4, .el-12 {
-grid-column: 3 / span 1;
-}
-
-.el-9 {
-grid-area: 2 / 1 / 4 / 3;
-}
-
-.el-10 {
-grid-row: 2 / span 2;
+.rowspan {
+    grid-row: span 2;
 }
 
 .blockIII-items {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(4, 370px);
-    grid-template-rows: repeat(4, 370px);
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(5, 370px);
     margin-bottom: 120px;
-    .el-13, .el-16 {
-        grid-column: 1 / span 1;
-    }
-    .el-15, .el-22 {
-        grid-column: 3 / span 1;
-    }
-    .el-20 {
-        grid-column: 2 / span 2;
-    }
-    .el-21 {
-        grid-column: 1 / span 2;
-    }
-    .el-14 {
-        grid-area: 1 / 2 / 3 / 3;
-    }
-    .el-17 {
-        grid-row: 2 / span 2;
-    }
-    .el-18 {
-        grid-area: 3 / 1 / 5 / 2;
-    }
-    .el-19 {
-        grid-column: 2 / span 1;
-    }
-}
+ }
 
 @media screen and (max-width: 500px) {
     .blockI-items, .blockII-items, .blockIII-items {
@@ -96,6 +66,68 @@ grid-row: 2 / span 2;
     }
 }
 
+// Доповнення по темі Position
+.picture {
+    position: relative;
+    .like-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        background: #E0E0E0 url(../assets/img/like.svg) top 10px right 10px no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        opacity: 0;
+    }
+    .download-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        background: rgba(224, 224, 224, 0.50) url(../assets/img/download.svg) top 10px right 10px no-repeat;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        opacity: 0;
+    }
+}
+
+.author, .date {
+    @extend .roboto;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.author {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1;
+}
+.date {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+    // Не спрацьовує кастомний курсор
+    cursor: url('../assets/img/hand-point-up.svg') auto;
+    .like-icon {
+        transition: all 1s ease;
+        opacity: 1;
+    }
+    .download-icon {
+        transition: all 1s ease;
+        opacity: 1;
+    }
+}
 
  
 

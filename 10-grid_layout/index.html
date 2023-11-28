@@ -3,12 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css">
     <title>CSS Grid Layout</title>
 </head>
@@ -19,12 +13,53 @@
             <div class="blockI">
                     <div class="title">Architectural Photography</div>
                     <span class="blockI-items">
-                        <img class="el el-1" src="assets/img/block-I-1.jpg" alt="#">
-                        <img class="el el-2" src="assets/img/block-I-2.jpg" alt="#">
-                        <img class="el el-3" src="assets/img/block-I-3.jpg" alt="#">
-                        <img class="el el-4" src="assets/img/block-I-4.jpg" alt="#">
-                        <img class="el el-5" src="assets/img/block-I-5.jpg" alt="#">
-                        <img class="el el-6" src="assets/img/block-I-6.jpg" alt="#">
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-I-1.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Jezael Melgoza</span>
+                            <span class="date">5 June 2020</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el colspan" src="assets/img/block-I-2.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Tom W</span>
+                            <span class="date">30 March 2021</span>
+                        </div>
+                        
+                        <div class="picture">
+                            <img class="el colspan" src="assets/img/block-I-3.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Johan Mouchet</span>
+                            <span class="date">14 August 2019</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-I-4.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Federico Di Dio</span>
+                            <span class="date">29 October 2020</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-I-5.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Casey Horner</span>
+                            <span class="date">9 July 2021</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el colspan" src="assets/img/block-I-6.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Alexander Rotker</span>
+                            <span class="date">22 April 2022</span>
+                        </div>
                     </span>
             </div>
 
@@ -32,12 +67,53 @@
             <div class="blockI">
                     <div class="title">Still Life Photography</div>
                     <span class="blockII-items">
-                        <img class="el el-7" src="assets/img/block-II-1.jpg" alt="#">
-                        <img class="el el-8" src="assets/img/block-II-2.jpg" alt="#">
-                        <img class="el el-9" src="assets/img/block-II-3.jpg" alt="#">
-                        <img class="el el-10" src="assets/img/block-II-4.jpg" alt="#">
-                        <img class="el el-11" src="assets/img/block-II-5.jpg" alt="#">
-                        <img class="el el-12" src="assets/img/block-II-6.jpg" alt="#">
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-II-1.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Robert Lukeman</span>
+                            <span class="date">30 June 2020</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el colspan" src="assets/img/block-II-2.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Sean Oulashin</span>
+                            <span class="date">5 September 2019</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el colspan rowspan" src="assets/img/block-II-3.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">John Fowler</span>
+                            <span class="date">10 August 2021</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el rowspan" src="assets/img/block-II-4.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Dave Hoefler</span>
+                            <span class="date">13 February 2021</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el colspan" src="assets/img/block-II-5.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Léonard Cotte</span>
+                            <span class="date">5 September 2019</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-II-6.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Rob Mulally</span>
+                            <span class="date">30 May 2020</span>
+                        </div>
                     </span>
             </div>
 
@@ -45,16 +121,85 @@
             <div class="blockI">
                     <div class="title">Portrait and Fashion Photography</div>
                     <span class="blockIII-items">
-                        <img class="el el-13" src="assets/img/block-III-1.jpg" alt="#">
-                        <img class="el el-14" src="assets/img/block-III-2.jpg" alt="#">
-                        <img class="el el-15" src="assets/img/block-III-3.jpg" alt="#">
-                        <img class="el el-16" src="assets/img/block-III-4.jpg" alt="#">
-                        <img class="el el-17" src="assets/img/block-III-5.jpg" alt="#">
-                        <img class="el el-18" src="assets/img/block-III-6.jpg" alt="#">
-                        <img class="el el-19" src="assets/img/block-III-7.jpg" alt="#">
-                        <img class="el el-20" src="assets/img/block-III-8.jpg" alt="#">
-                        <img class="el el-21" src="assets/img/block-III-9.jpg" alt="#">
-                        <img class="el el-22" src="assets/img/block-III-10.jpg" alt="#">
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-III-1.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Pooja Chaudhary</span>
+                            <span class="date">30 June 2020</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el rowspan" src="assets/img/block-III-2.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Rob Mulally</span>
+                            <span class="date">30 May 2020</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-III-3.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Seth Doyle</span>
+                            <span class="date">30 May 2020</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-III-4.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">devn</span>
+                            <span class="date">30 June 2020</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-III-5.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Noah Buscher</span>
+                            <span class="date">13 February 2021</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el rowspan" src="assets/img/block-III-6.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Sincerely Media</span>
+                            <span class="date">7 January 2021</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-III-7.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Seth Doyle</span>
+                            <span class="date">30 June 2020</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el colspan" src="assets/img/block-III-8.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Melissa Askew</span>
+                            <span class="date">29 April 2021</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el colspan" src="assets/img/block-III-9.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Brooke Cagle</span>
+                            <span class="date">5 August 2019</span>
+                        </div>
+
+                        <div class="picture">
+                            <img class="el" src="assets/img/block-III-10.jpg" alt="#">
+                            <div class="like-icon"></div>
+                            <div class="download-icon"></div>
+                            <span class="author">Clem Onojeghuo</span>
+                            <span class="date">1 July 2021</span>
+                        </div>
                     </span>
             </div>
         </div>  
