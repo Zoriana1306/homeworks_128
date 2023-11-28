@@ -128,7 +128,7 @@ section {
     .black {
         background-color: #1A1A1A;
         // filter: invert(1); (не зрозумію, куди додати цю властивість негативу?)
-        transform: rotateY(180deg);
+        transform: rotateX(180deg);
     }
 }
 
@@ -145,10 +145,13 @@ section {
 }
 
 .card:hover .grey {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
+    cursor: pointer;
 }
+
 .card:hover .black {
-    transform: rotateY(360deg);
+    transform: rotateX(360deg);
+    cursor: pointer;
     // filter: invert(1); (не зрозумію, куди додати цю властивість негативу?)
 }
 

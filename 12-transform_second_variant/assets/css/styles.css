@@ -174,7 +174,7 @@ section {
 }
 .card .black {
   background-color: #1A1A1A;
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
 
 .grey, .black {
@@ -190,11 +190,13 @@ section {
 }
 
 .card:hover .grey {
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
+  cursor: pointer;
 }
 
 .card:hover .black {
-  transform: rotateY(360deg);
+  transform: rotateX(360deg);
+  cursor: pointer;
 }
 
 .line-top {
