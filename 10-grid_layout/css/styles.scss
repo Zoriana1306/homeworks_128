@@ -117,6 +117,7 @@ $primary-text-color: #000;
 .picture:hover {
     transform: scale(1.1);
     transition: all 1s ease;
+    opacity: 0.7;
     // Не спрацьовує кастомний курсор
     cursor: url('../assets/img/hand-point-up.svg') auto;
     .like-icon {
