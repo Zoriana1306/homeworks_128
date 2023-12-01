@@ -92,8 +92,17 @@ label[for] {
     line-height: 1.375rem;
     letter-spacing: -0.0125rem;
 }
+
 label[for=male] {
     margin-right: 21px;
+}
+
+select .pale-text {
+    color: $pale-text-color;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.125rem; 
+    letter-spacing: -0.00625rem;
 }
 
 .pale-text {
@@ -104,13 +113,6 @@ label[for=male] {
     letter-spacing: -0.00625rem;
 }
 
-select .pale-text {
-    color: $pale-text-color;
-    font-size: 0.8125rem;
-    font-weight: 400;
-    line-height: 1.125rem; 
-    letter-spacing: -0.00625rem;
-}
 .private-police {
     text-align: center;
 }
@@ -139,7 +141,7 @@ select .pale-text {
         width: 138px;
         height: 30px;
         border: 1px solid #E4E4E4;
-        border-radius: 5px;
+        border-radius: 6px;
         color: transparent;
         cursor: pointer;
     }
@@ -147,17 +149,19 @@ select .pale-text {
 
 .sell {
     border: 1px solid #E4E4E4;
-    border-radius: 5px;
+    border-radius: 6px;
     width: 245px;
     height: 38px;
     padding: 7px 10px;
 }
+
 .page-1 .email {
     width: 500px;
 }
 
 .sell:focus {
-    outline: 2px solid $blue-color;
+    border-color: $blue-color;
+    outline: none;
 }
 
 button[type=submit] {
@@ -172,7 +176,7 @@ button[type=submit] {
     letter-spacing: -0.00625rem;
     background-color: $blue-color;
     border: 1px solid #E4E4E4;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 .page-1 button {
     margin: 20px 34px 22px 36px;
@@ -186,6 +190,7 @@ button[type=submit] {
 }
 
 a {
+    text-decoration: none;
     color: $blue-color;
     text-align: center;
     @extend .inter;
@@ -194,6 +199,16 @@ a {
     line-height: 1.125rem;
     letter-spacing: -0.00625rem;
 } 
+a:hover {
+    text-decoration: underline;
+    font-size: 0.8625rem;;
+}
+
+button:hover {
+    color: black;
+
+}
+
 .log-in {
     color: $blue-color;
     @extend .roboto;
@@ -201,6 +216,11 @@ a {
     font-weight: 500;
     line-height: 1.375rem; 
     letter-spacing: -0.00625rem;
+}
+
+.log-in:hover {
+    font-size: 0.9875rem;
+    text-decoration: none;
 }
 .text {
     color:$label-text-color;
@@ -219,15 +239,16 @@ input[checkbox] {
 // Іконки
 .checkbox-icon::before {
     content: '';
-    background: url('../img/checkbox-static.svg') right 0px top 1px no-repeat;
+    background: url('../img/checkbox-static.svg') right 0px top 0px no-repeat;
     width: 20px;
     height: 20px;
 }
 
 .checkbox-icon:checked {
-    background: url('../img/checkbox.svg') right 0px top 1px no-repeat;
+    content: '';
+    background: url('../img/checkbox.svg') right 0px top 0px no-repeat;
     width: 20px;
-    height: 20px;
+    height: 21px;
     appearance: none;
 }
 
@@ -249,8 +270,27 @@ input[checkbox] {
     background-color: #fff;
     border: 1px solid #E4E4E4;
     border-radius: 5px;
+    overflow: hidden;
     img {
         width: 16px;
         height: 16px;   
     }
 }
+
+.trash-icon img:hover {
+    scale: (1.3);
+    transition: all 0.1s ease;
+}
+ 
+.select2-container--default 
+.select2-selection--single 
+.select2-selection__arrow  {
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 245px;
+    height: 38px;
+    background: #fff url('../img/select-icon.svg') right 10px top 10px  no-repeat;
+    appearance: none;
+    color: #545454;
+}
+

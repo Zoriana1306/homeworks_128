@@ -29,13 +29,13 @@ $primary-text-color: #000;
 
 .el {
     border-radius: 20px;
+    opacity: 0.7;
 }
 
 .blockI-items, .blockII-items {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, 370px);
-    grid-template-rows: repeat(3, 370px);
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 120px;
 }
 
@@ -50,7 +50,7 @@ $primary-text-color: #000;
 .blockIII-items {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, 370px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 370px);
     margin-bottom: 120px;
  }
@@ -69,6 +69,8 @@ $primary-text-color: #000;
 // Доповнення по темі Position
 .picture {
     position: relative;
+    overflow: hidden;
+    border-radius: 20px;
     .like-icon {
         width: 40px;
         height: 40px;
@@ -81,6 +83,12 @@ $primary-text-color: #000;
         top: 20px;
         left: 20px;
         opacity: 0;
+        cursor: pointer;
+        overflow: hidden;
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.1s ease; 
+        }
     }
     .download-icon {
         width: 40px;
@@ -91,9 +99,15 @@ $primary-text-color: #000;
         top: 20px;
         right: 20px;
         opacity: 0;
+        cursor: pointer;
+        overflow: hidden;
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.1s ease; 
+        }
     }
 }
-
+ 
 .author, .date {
     @extend .roboto;
     color: #FFF;
@@ -114,12 +128,13 @@ $primary-text-color: #000;
     z-index: 1;
 }
 
-.picture:hover {
+.el:hover {
     transform: scale(1.1);
     transition: all 1s ease;
-    opacity: 0.7;
-    // Не спрацьовує кастомний курсор
-    cursor: url('../assets/img/hand-point-up.svg') auto;
+    opacity: 1;
+}
+
+.picture:hover {
     .like-icon {
         transition: all 1s ease;
         opacity: 1;
@@ -130,11 +145,32 @@ $primary-text-color: #000;
     }
 }
 
- 
+.picture::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, 
+                #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, 
+                rgba(187, 186, 192, 0.26) 62.5%);
+    bottom: 0;
+    left: 0;
+}
 
-
-
-
+.picture:hover::before {
+    content: "";
+    display: block;
+    border-radius: 20px;
+    background:  linear-gradient(0deg, 
+                #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, 
+                rgba(187, 186, 192, 0.00) 12.29%);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 
 
 

@@ -127,10 +127,14 @@ section {
     }
     .black {
         background-color: #1A1A1A;
-        // filter: invert(1); (не зрозумію, куди додати цю властивість негативу?)
         transform: rotateX(180deg);
     }
 }
+
+.black img {
+    filter: invert(1);
+}
+
 
 .grey, .black {
     display: flex;

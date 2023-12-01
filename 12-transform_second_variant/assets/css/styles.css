@@ -177,6 +177,10 @@ section {
   transform: rotateX(180deg);
 }
 
+.black img {
+  filter: invert(1);
+}
+
 .grey, .black {
   display: flex;
   justify-content: center;
