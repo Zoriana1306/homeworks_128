@@ -432,6 +432,9 @@ label[for] {
     }
 }
 
+// ---------------------------------------------------------------------------------------
+// Адаптив
+
 @media screen and (max-width: 1024px) {
     // Header
     .navigation {
@@ -457,6 +460,35 @@ label[for] {
     .nav-buttons {
         margin-left: 10px;
     }
+}
+// Menu
+.container_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 70px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.section-wrap-II {
+    .pic-II {
+        width: 450px;
+        height: 350px;
+    }
+}
+.section-wrap-II {
+    gap: 25px;
+}
+.section-wrap-III {
+    .pic-III {
+        width: 450px;
+        height: 350px;
+    }
+}
+.section-wrap-III {
+    gap: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -484,13 +516,60 @@ label[for] {
     .nav-buttons {
         display: none;
     }
+    header {
+        margin-bottom: 35px;
+    }
 
     // Hero
     .hero-container {
         display: flex;
         flex-direction: column;
-        
         gap: 20px;
+        margin-bottom: 35px;
     }
 }
 
+// Menu 
+.container-section1 h2 {
+    margin-bottom: 10px;
+}
+ 
+.section-wrap-II {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .pic-II {
+        width: 250px;
+        height: 220px;
+    }
+}
+.section-wrap-II {
+    gap: 25px;
+}
+.section-wrap-III {
+    margin-bottom: 30px;
+    .pic-III {
+        width: 250px;
+        height: 220px;
+    }
+}
+.section-wrap-III {
+    gap: 15px;
+}
+// Footer
+.container-footer {
+    margin-bottom: 30px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer-logo {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+.for-adapt {
+    display: none;
+}
