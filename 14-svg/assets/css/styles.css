@@ -79,6 +79,10 @@ main {
   font-family: "Roboto";
 }
 
+header {
+  background-color: white;
+}
+
 .logo-black {
   width: 200px;
   height: 35px;
