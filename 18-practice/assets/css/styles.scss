@@ -1,3 +1,12 @@
-@import '_general.scss';
+@import 'general';
 
-@import 'fonts.scss';
+@import 'fonts';
+
+$lightblue: #B0E0E6;
+
+.lato {
+    font-family: 'Lato';
+}
+.red-hat-display {
+    font-family: 'Red Hat Display';
+}
