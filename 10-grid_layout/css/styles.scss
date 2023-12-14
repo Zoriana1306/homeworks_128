@@ -154,6 +154,10 @@ $primary-text-color: #000;
     }
 }
 
+.animate__animated {
+    animation-duration: 3s;
+}
+
 // === Animation ===
 // Перший варіант - підключений локально через css та js, другий нижче закоментований
 

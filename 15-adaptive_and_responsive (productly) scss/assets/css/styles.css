@@ -504,6 +504,10 @@ label[for] {
   margin-left: 0;
 }
 
+.animate__animated {
+  animation-duration: 3s;
+}
+
 @media screen and (max-width: 1024px) {
   .navigation {
     display: none;
