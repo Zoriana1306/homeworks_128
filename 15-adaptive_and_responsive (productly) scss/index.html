@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/gotham.otf" type="text/css">
+    <link href="https://fonts.cdnfonts.com/css/gotham-serif-bold" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="assets/css/responce.scss">
     <title>Productly (scss)</title>
@@ -16,7 +17,7 @@
             <div class="container">
                 <div class="header-nav">
                     <div>
-                        <img src="assets/img/Logo.svg" alt="logo" style="width: 200px; height: 32px;">
+                        <img class="animate__animated animate__bounce" src="assets/img/Logo.svg" alt="logo" style="width: 200px; height: 32px;">
                     </div>
 
                     <nav>
@@ -43,7 +44,7 @@
             <div class="container">
                 <div class="hero-container">
                     <section class="hero-banner" id="product">
-                        <div class="text">
+                        <div class="text animate__animated animate__bounceInLeft">
                             <h1>The Design Thinking superpowers</h1>
                             <p>Tools, tutorials, design and innovation experts, all in one 
                             place! The most intuitive way to imagine your next user
@@ -52,7 +53,7 @@
                         </div>
 
                         <div>
-                            <img src="assets/img/hero-banner.svg" alt="hero-banner">
+                            <img class="animate__animated animate__bounceInRight" src="assets/img/hero-banner.svg" alt="hero-banner">
                         </div>
                     </section>
                 </div>
@@ -67,7 +68,8 @@
                             <h2>We design tools to unveil <br>your superpowers</h2>
                         </div>
                         
-                        <div class="container_icons">
+                    <div class="container-section1 animate__animated animate__fadeInDownBig">
+                        <div class="container_icons ">
                                     <div>
                                         <div class="item-cursor">
                                             <img src="assets/img/icon-cursor.svg" alt="icon-cursor">
@@ -125,7 +127,7 @@
         <!-- Main. Section 2 -->
        <div class="container">
             <div class="section-wrap-II">   
-                <div class="item-one">
+                <div class="item-one animate__animated animate__bounceInLeft">
                     <div class="intro-text">Effortless Validation for</div>
                     <h2>Design Professionals</h2>
                     <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
@@ -138,7 +140,7 @@
                 </div>
 
                 <div class="item-two">
-                    <div class="picture-block-II">
+                    <div class="picture-block-II animate__animated animate__bounceInRight">
                         <svg class="pic-II">
                             <use xlink:href="assets/img/sprite.svg#picture-for-sec-II" />
                         </svg>
@@ -150,15 +152,15 @@
         <!-- Main. Section 3 -->
        <div class="container">
             <div class="section-wrap-III">  
-                <div class="item-one">
-                    <div class="picture-block-II">
+                <div class="item-one animate__animated animate__bounceInLeft">
+                    <div class="picture-block-II animate__animated animate__bounceInLeft">
                         <svg class="pic-III">
                             <use xlink:href="assets/img/sprite.svg#picture-for-sec-III" />
                         </svg>
                     </div>
                 </div>
 
-                <div class="item-two">
+                <div class="item-two animate__animated animate__bounceInRight">
                     <div class="intro-text">Easier decision making for</div>
                     <h2>Product Managers</h2>
                     <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
@@ -178,7 +180,7 @@
                 <div class="container-footer">
                     <div class="footer">
                         <div class="footer-logo">
-                            <div><img src="assets/img/Logo.svg" alt="logo" style="width: 200px; height: 32px;"></div>
+                            <div><img class="animate__animated animate__bounce" src="assets/img/Logo.svg" alt="logo" style="width: 200px; height: 32px;"></div>
                         </div>
 
                         <div class="footer-nav for-adapt">
@@ -215,5 +217,11 @@
             </div>
         </footer>
     </div>
+
+    <script src="assets/js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+
 </body>
 </html>

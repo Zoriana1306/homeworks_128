@@ -6,25 +6,373 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <title>Practice</title>
 </head>
+
 <body>
     <div class="page-wrapper"> 
         <!-- Header -->
         <header>
             <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/img/logo.svg" alt="Manifest">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Works</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-search">
+                        <button type="button" class="search-btn" title="Search">
+                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" 
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path id="search" fill-rule="evenodd" clip-rule="evenodd" d="M13.8942 11.0715L17.6712 14.6313C17.8399 14.8079 17.8316 15.0783 17.6524 15.2454L16.9914 15.8684C16.9027 15.9526 16.7821 16 16.6562 16C16.5303 16 16.4096 15.9526 16.3209 15.8684L12.5439 12.3085C12.4394 12.21 12.3446 12.1028 12.2606 11.9881L11.5524 11.0982C10.3806 11.9801 8.92549 12.4602 7.42595 12.4598C4.33594 12.4699 1.65084 10.461 0.960303 7.62231C0.269767 4.78365 1.75809 1.87288 4.54414 0.613257C7.3302 -0.646363 10.6704 0.0813446 12.5873 2.36555C14.5042 4.64977 14.4862 7.88086 12.5439 10.1459L13.4881 10.76C13.6356 10.849 13.7718 10.9535 13.8942 11.0715ZM2.70508 6.23017C2.70508 8.68773 4.81889 10.68 7.42641 10.68C8.67859 10.68 9.87948 10.2112 10.7649 9.37666C11.6503 8.54216 12.1477 7.41034 12.1477 6.23017C12.1477 3.77262 10.0339 1.78037 7.42641 1.78037C4.81889 1.78037 2.70508 3.77262 2.70508 6.23017Z" />
+                            </svg>     
+                        </button>
+                    </div>
+                </div>
             </div>
         </header>
 
         <!-- Main -->
-        <main>
+        <div class="page-wrapper">
+            <main>
+                <div class="hero-section">
+                    <div class="container">
+                        <h1>Manifest is a newborn theme. Clean, simple and fast.</h1>
+                    </div>
+                </div>
 
-        </main>
+                <section class="blog-section">
+                    <div class="container">
+                        <h2>Blog</h2>
+                        <div class="blog-list">
 
+                            <div class="blog-item">
+                                <div class="blog-content">
+                                    <div class="blog-tags">
+                                        Technology, Interface Design
+                                    </div>
+                                    <div class="blog-title">
+                                        <a href="">Using UX Design to Build a Sustainable Future</a>
+                                    </div>
+                                    <div class="blog-date">
+                                        <time datetime="2020-05-06">6 May, 2020</time>
+                                    </div>
+                                    <div class="blog-descr">
+                                        <p>Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.</p>
+                                    </div>
+
+                                    <div class="blog-pic">
+                                            <a href="#">
+                                                <picture>
+                                                    <source srcset="assets/images/arrow-m.jpg" media="(max-width: 420px)">
+                                                    <source srcset="assets/images/arrow-t.jpg" media="(max-width: 1024px)">
+                                                    <source srcset="assets/images/arrow-d.jpg" media="(max-width: 1400px)">
+                                                    <img src="assets/images/arrow-2x.jpg" alt="">
+                                                </picture>
+                                            </a>
+                                    </div>
+                                </div>                              
+                            </div>
+
+                            <div class="blog-item">
+                                <div class="blog-pic">
+                                    <a href="#">
+                                        <picture>
+                                            <source srcset="assets/images/build-image-m.jpg" media="(max-width: 420px)">
+                                            <source srcset="assets/images/build-image-t.jpg" media="(max-width: 1024px)">
+                                            <source srcset="assets/images/build-image-d.jpg" media="(max-width: 1400px)">
+                                            <img src="assets/images/build-image-2x" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+
+                                <div class="blog-content">
+                                    <div class="blog-tags">
+                                        Technology, Interface Design
+                                    </div>
+                                    <div class="blog-title">
+                                        <a href="#">Using UX Design to Build a Sustainable Future</a>
+                                    </div>
+
+                                    <div class="blog-date">
+                                        <time datetime="2020-05-06">6 May, 2020</time>
+                                    </div>
+                                    <div class="blog-descr">
+                                        <p>Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.</p>
+                                    </div>
+                                    
+                                </div>                              
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Latest Posts -->
+                <section class="latest">
+                    <div class="container">
+                        <div class="title-wrap">
+                            <h3>Latest Posts</h3>
+                            <a href="#" class="all-links">View All</a>
+                        </div>
+
+                        <ul class="latest-list">
+                            <li>
+                                <div class="latest-item">
+                                    <div class="blog-pic">
+                                        <a href="#">
+                                            <picture>
+                                                <source srcset="assets/images/lamp-image-m.jpg" media="(max-width: 420px)">
+                                                <source srcset="assets/images/lamp-image-t.jpg" media="(max-width: 1024px)">
+                                                <source srcset="assets/images/lamp-image-d.jpg" media="(max-width: 1400px)">
+                                                <img src="assets/images/lamp-image-2x.jpg" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="latest-tags-date">
+                                            <div class="blog-tags">
+                                                Interface Design
+                                            </div>
+                                            <div class="blog-date">
+                                                <time datetime="2020-06-08">8 June, 2020</time>
+                                            </div>
+                                        </div>
+                                        <div class="blog-title">
+                                            UX traffic light colours
+                                        </div>
+                                        <div class="blog-descr">
+                                            <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="latest-item">
+                                    <div class="blog-pic">
+                                        <a href="#">
+                                            <picture>
+                                                <source srcset="assets/images/arrow-2-m.jpg" media="(max-width: 420px)">
+                                                <source srcset="assets/images/arrow-2-t.jpg" media="(max-width: 1024px)">
+                                                <source srcset="assets/images/arrow-2-d.jpg" media="(max-width: 1400px)">
+                                                <img src="assets/images/arrow-2-2x.jpg" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="latest-tags-date">
+                                            <div class="blog-tags">
+                                                Technology
+                                            </div>
+                                            <div class="blog-date">
+                                                <time datetime="2020-05-06">6 May, 2020</time>
+                                            </div>
+                                        </div>
+                                        <div class="blog-title">
+                                            Using UX Design to Build a Sustainable Future
+                                        </div>
+                                        <div class="blog-descr">
+                                            <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="latest-item">
+                                    <div class="blog-pic">
+                                        <a href="#">
+                                            <picture>
+                                                <source srcset="assets/images/roof-m.jpg" media="(max-width: 420px)">
+                                                <source srcset="assets/images/roof-t.jpg" media="(max-width: 1024px)">
+                                                <source srcset="assets/images/roof-d.jpg" media="(max-width: 1400px)">
+                                                <img src="assets/images/roof-2x.jpg" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="latest-tags-date">
+                                            <div class="blog-tags">
+                                                Visual Design
+                                            </div>
+                                            <div class="blog-date">
+                                                <time datetime="2020-06-08">8 June, 2020</time>
+                                            </div>
+                                        </div>
+                                        <div class="blog-title">
+                                            Creativity vs. UX
+                                        </div>
+                                        <div class="blog-descr">
+                                            <p>Is it possible to create a delightful user experience without following best UX practices?</p>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+      <!-- The Most Popular -->
+                <section class="latest most-popular">
+                    <div class="container">
+                        <div class="title-wrap">
+                            <h3>The Most Popular</h3>
+                            <a href="#" class="all-links">View All</a>
+                        </div>
+
+                        <ul class="latest-list">
+                            <li>
+                                <div class="latest-item">
+                                    <div class="blog-pic">
+                                        <a href="#">
+                                            <picture>
+                                                <source srcset="assets/images/ellipse-m.jpg" media="(max-width: 420px)">
+                                                <source srcset="assets/images/ellipse-t.jpg" media="(max-width: 1024px)">
+                                                <source srcset="assets/images/ellipse-d.jpg" media="(max-width: 1400px)">
+                                                <img src="assets/images/arrow-2x.jpg" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="latest-tags-date">
+                                            <div class="blog-tags">
+                                                Interface Design
+                                            </div>
+                                            <div class="blog-date">
+                                                <time datetime="2020-06-08">8 June, 2020</time>
+                                            </div>
+                                        </div>
+                                        <div class="blog-title">
+                                            Mentorship Match — How a simple LinkedIn feature can boost diversity
+                                        </div>
+                                        <div class="blog-descr">
+                                            <p>LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand</p>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="latest-item">
+                                    <div class="blog-pic">
+                                        <a href="#">
+                                            <picture>
+                                                <source srcset="assets/images/wall-m.jpg" media="(max-width: 420px)">
+                                                <source srcset="assets/images/wall-t.jpg" media="(max-width: 1024px)">
+                                                <source srcset="assets/images/wall-d.jpg" media="(max-width: 1400px)">
+                                                <img src="assets/images/wall-2x.jpg" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <div class="latest-tags-date">
+                                            <div class="blog-tags">
+                                                Visual Design
+                                            </div>
+                                            <div class="blog-date">
+                                                <time datetime="2020-06-08">8 June, 2020</time>
+                                            </div>
+                                        </div>
+                                        <div class="blog-title">
+                                            Creativity vs. UX
+                                        </div>
+                                        <div class="blog-descr">
+                                            <p>Is it possible to create a delightful user experience without following best UX practices?</p>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="more-wrap">
+                            <button type="button" class="btn">Load More</button>
+                        </div>
+                    </div>
+                </section>
+
+        <!-- Info -->
+                <div class="info">
+                    <div class="info-left">
+                        <a href="#">Full-time UI/UX designer
+                            Head of Design at VeronaLabs.com
+                        </a>
+                    </div>
+                    <div class="info-right">
+                        <p>We work with clients around the world from our headquarters in Charleston, South Carolina.
+                            We focus on naming, branding, brand narratives, website design and development, and brand experiences.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
         <!-- Footer -->
         <footer>
             <div class="container">
+
+                <div class="footer-top">
+                    <div class="contacts">
+                        <p class="p">Need a project?</p>
+                        <ul>
+                            <li><a href="tel:2395550108">(239) 555-0108</a></li>
+                            <li><a href="mailto:tanya.hill@example.com">tanya.hill@example.com</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="soc-list">
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer, nofollow" 
+                            title="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.4191 7.07531L23.4191 7.07531L23.4194 7.07999C23.5308 9.0426 23.5308 14.9574 23.4194 16.92L23.4192 16.9233C23.3259 18.7835 22.9064 20.3435 21.6264 21.6235L21.6257 21.6241C20.3459 22.9088 18.7866 23.3282 16.9276 23.4162L16.9229 23.4165C14.9603 23.5278 9.04015 23.5278 7.07755 23.4164L7.07425 23.4163C5.21478 23.323 3.65928 22.9038 2.37342 21.6228C1.08876 20.343 0.669377 18.7837 0.581368 16.9247L0.581102 16.92C0.469711 14.9574 0.469711 9.03724 0.581102 7.07463L0.581113 7.07463L0.581278 7.07134C0.674601 5.21006 1.08922 3.65117 2.37342 2.37185C3.65907 1.09109 5.21958 0.671792 7.07293 0.583784L7.07293 0.583805L7.07755 0.583543C9.04015 0.472152 14.9603 0.472152 16.9229 0.583554L16.9262 0.583719C18.7864 0.676988 20.3464 1.09654 21.6264 2.37654L21.6271 2.37721C22.9117 3.65699 23.3311 5.2163 23.4191 7.07531ZM19.2617 21.8206L19.2634 21.8199C20.4447 21.3462 21.3546 20.4371 21.8233 19.2593C22.1737 18.3788 22.2926 16.9608 22.3344 15.617C22.3649 14.6376 22.3548 13.639 22.3467 12.8378C22.3436 12.5239 22.3407 12.2403 22.3407 12C22.3407 11.7597 22.3436 11.4761 22.3467 11.1623C22.3548 10.3615 22.3649 9.36385 22.3344 8.38496C22.2925 7.04154 22.1736 5.62405 21.8235 4.74125L21.8228 4.73948C21.3491 3.55822 20.44 2.64836 19.2622 2.17964L19.2608 2.1791C18.3812 1.83202 16.9641 1.71304 15.6202 1.67051C14.6334 1.63927 13.6278 1.64891 12.8236 1.65662C12.5166 1.65956 12.239 1.66222 12.0029 1.66222C11.7626 1.66222 11.479 1.65935 11.1652 1.65618C10.3644 1.64807 9.36677 1.63798 8.38787 1.66849C7.04446 1.71037 5.62697 1.82929 4.74416 2.17942L4.74416 2.17942L4.7424 2.18013C3.56113 2.65383 2.65128 3.56289 2.18255 4.7407L2.18201 4.74207C1.83494 5.62173 1.71596 7.03879 1.67342 8.38271C1.64218 9.36954 1.65182 10.3751 1.65953 11.1793C1.66248 11.4863 1.66514 11.7639 1.66514 12C1.66514 12.2403 1.66227 12.5239 1.65909 12.8377C1.65099 13.6385 1.64089 14.6361 1.6714 15.615C1.71328 16.9585 1.83221 18.3759 2.18234 19.2588L2.18304 19.2605C2.65675 20.4418 3.5658 21.3516 4.74362 21.8204L4.74499 21.8209C5.62465 22.168 7.04171 22.287 8.38562 22.3295C9.37245 22.3607 10.378 22.3511 11.1822 22.3434C11.4892 22.3404 11.7668 22.3378 12.0029 22.3378C12.2433 22.3378 12.5268 22.3406 12.8406 22.3438C13.6414 22.3519 14.6391 22.362 15.618 22.3315C16.9614 22.2896 18.3789 22.1707 19.2617 21.8206ZM6.34962 12C6.34962 8.87014 8.87305 6.3467 12.0029 6.3467C15.1328 6.3467 17.6562 8.87014 17.6562 12C17.6562 15.1299 15.1328 17.6533 12.0029 17.6533C8.87305 17.6533 6.34962 15.1299 6.34962 12ZM7.50247 12C7.50247 14.483 9.52616 16.5004 12.0029 16.5004C14.4797 16.5004 16.5034 14.483 16.5034 12C16.5034 9.51745 14.4855 7.49955 12.0029 7.49955C9.52037 7.49955 7.50247 9.51745 7.50247 12ZM19.3431 5.595C19.3431 6.11559 18.9256 6.53024 18.4079 6.53024C17.8873 6.53024 17.4727 6.11267 17.4727 5.595C17.4727 5.07855 17.8915 4.65977 18.4079 4.65977C18.9244 4.65977 19.3431 5.07855 19.3431 5.595Z" stroke="black"/>
+                                </svg>
+                            </a>
+
+                        </li>
+    
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer, nofollow" title="Facebook">
+                                <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5845 13.5L13.251 9.15656H9.08338V6.33797C9.08338 5.14969 9.66557 3.99141 11.5321 3.99141H13.4268V0.293438C13.4268 0.293438 11.7074 0 10.0635 0C6.63135 0 4.38791 2.08031 4.38791 5.84625V9.15656H0.572754V13.5H4.38791V24H9.08338V13.5H12.5845Z" />
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" rel="noreferrer, nofollow" title="Twitter">
+                                <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.7376 5.98123C26.7564 6.24372 26.7564 6.50626 26.7564 6.76875C26.7564 14.775 20.6626 24 9.52511 24C6.09384 24 2.90636 23.0062 0.225098 21.2813C0.712616 21.3375 1.18132 21.3563 1.68759 21.3563C4.5188 21.3563 7.12509 20.4 9.20635 18.7688C6.54384 18.7125 4.31258 16.9688 3.54382 14.5687C3.91885 14.625 4.29383 14.6625 4.68762 14.6625C5.23135 14.6625 5.77514 14.5874 6.28135 14.4563C3.50636 13.8937 1.42505 11.4562 1.42505 8.51249V8.43752C2.23127 8.88752 3.16885 9.16877 4.16252 9.20622C2.53127 8.1187 1.46256 6.26247 1.46256 4.16246C1.46256 3.03748 1.76251 2.00623 2.28754 1.10622C5.2688 4.78122 9.75008 7.18118 14.775 7.44372C14.6813 6.99372 14.625 6.52502 14.625 6.05626C14.625 2.71872 17.325 0 20.6813 0C22.425 0 24 0.731248 25.1063 1.9125C26.475 1.65001 27.7875 1.14374 28.95 0.450003C28.5 1.85628 27.5438 3.03754 26.2875 3.78748C27.5063 3.6563 28.6876 3.31872 29.775 2.85002C28.9502 4.04997 27.9189 5.11868 26.7376 5.98123Z" />
+                                </svg> 
+                            </a>
+                        </li>   
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer, nofollow" title="Linkedin">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.37226 24H0.396437V7.97643H5.37226V24ZM2.88167 5.79066C1.29056 5.79066 0 4.47278 0 2.88167C1.13885e-08 2.1174 0.303604 1.38444 0.844022 0.844022C1.38444 0.303604 2.1174 0 2.88167 0C3.64594 0 4.3789 0.303604 4.91932 0.844022C5.45974 1.38444 5.76334 2.1174 5.76334 2.88167C5.76334 4.47278 4.47224 5.79066 2.88167 5.79066ZM23.9952 24H19.0301V16.1998C19.0301 14.3409 18.9926 11.9569 16.443 11.9569C13.856 11.9569 13.4596 13.9766 13.4596 16.0659V24H8.48912V7.97643H13.2614V10.1622H13.331C13.9953 8.90323 15.618 7.57463 18.039 7.57463C23.0748 7.57463 24.0005 10.8908 24.0005 15.198V24H23.9952Z" />
+                                </svg> 
+                            </a>
+                        </li> 
+
+                    </ul>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© Copyright Manifest Theme. Allrights reserved</p>
+                </div>
             </div>
         </footer>
-
     </div>
 </body>
 </html>

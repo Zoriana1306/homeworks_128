@@ -140,8 +140,7 @@ main p {
 }
 
 .pic-wrap {
-  width: min(100%, 580px);
-  aspect-ratio: 117/58;
+  aspect-ratio: 117/50;
 }
 
 .hero img {
@@ -149,14 +148,10 @@ main p {
 }
 
 .pic-wrap .lazy {
-  width: 1170px;
-  height: 500px;
   margin-bottom: 20px;
 }
 
 picture img {
-  width: 1170px;
-  height: 500px;
   margin-bottom: 20px;
 }
 
@@ -171,7 +166,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 531px;
 }
 
 .footer-contacts .text {
@@ -268,7 +262,6 @@ footer p {
   }
 
   .pic-wrap {
-    width: min(100%, 699px);
     aspect-ratio: 768/699;
   }
 
@@ -320,8 +313,7 @@ footer p {
   }
 
   .pic-wrap {
-    width: min(100%, 300px);
-    aspect-ratio: 320/300;
+    aspect-ratio: 300/300;
   }
 
   footer {

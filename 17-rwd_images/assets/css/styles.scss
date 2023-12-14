@@ -73,8 +73,8 @@ main {
 }
 
 .pic-wrap {
-    width: min(100%, 580px);
-    aspect-ratio: 117/58;
+    
+    aspect-ratio: 117/50;
 }
 
 .hero img {
@@ -82,14 +82,10 @@ main {
 }
 
 .pic-wrap .lazy {
-    width: 1170px;
-    height: 500px;
     margin-bottom: 20px;
 }
 
 picture img {
-    width: 1170px;
-    height: 500px;
     margin-bottom: 20px;
 }
 
@@ -106,7 +102,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 531px;
 }
 
 .footer-contacts {
@@ -177,33 +172,35 @@ footer p {
 
 // ------------------------------------------------------------------------
 // === АДАПТАЦІЯ ===
+
+
 @media screen and (max-width: 768px) {
 // Header
-header {
-    height: 60px;
-    background-color: white;
-        h3 {
-           @extend .lato;
-           color: $black-color-text;
-           font-size: 1rem;
-           font-weight: 400;
-           line-height: 150%; 
-           letter-spacing: 0.5rem;
-           margin-top: 18px;
-           margin-bottom: 18px;
-           margin-left: 0;
-       }
-   }
-
-// Main 
-main {
-    section {
-        margin-bottom: 70px;
+    header {
+        height: 60px;
+        background-color: white;
+            h3 {
+            @extend .lato;
+            color: $black-color-text;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 150%; 
+            letter-spacing: 0.5rem;
+            margin-top: 18px;
+            margin-bottom: 18px;
+            margin-left: 0;
+        }
     }
-    h1 {
-        font-size: 2.0625rem;
-        line-height: 3.125rem; 
-        letter-spacing: 0.10313rem;
+
+    // Main 
+    main {
+        section {
+            margin-bottom: 70px;
+        }
+        h1 {
+            font-size: 2.0625rem;
+            line-height: 3.125rem; 
+            letter-spacing: 0.10313rem;
         margin-top: 150px;
         margin-bottom: 50px;
     }
@@ -218,7 +215,6 @@ main {
 }
 
 .pic-wrap {
-    width: min(100%, 699px);
     aspect-ratio: 768/699;
 }
 
@@ -275,8 +271,7 @@ main {
 }
 
 .pic-wrap {
-    width: min(100%, 300px);
-    aspect-ratio: 320/300;
+    aspect-ratio: 300/300;
 }
 // Footer
     

@@ -49,57 +49,49 @@ $primary-text-color: #000;
     margin-bottom: 120px;
  }
 
-@media screen and (max-width: 500px) {
-    .blockI-items, .blockII-items, .blockIII-items {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    .el {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-}
-
 // Доповнення по темі Position
 .picture {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
-    .like-icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 8px;
-        background: #E0E0E0 url(../assets/img/like.svg) top 10px right 10px no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        opacity: 0;
-        cursor: pointer;
-        overflow: hidden;
-        &:hover {
-            transform: scale(1.2);
-            transition: all 0.1s ease; 
+        img {
+            &:hover {
+                transform: scale(1.1);
+                transition: all .6s ease;
+            }
         }
-    }
-    .download-icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 8px;
-        background: rgba(224, 224, 224, 0.50) url(../assets/img/download.svg) top 10px right 10px no-repeat;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        opacity: 0;
-        cursor: pointer;
-        overflow: hidden;
-        &:hover {
-            transform: scale(1.2);
-            transition: all 0.1s ease; 
+        .like-icon {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            background: #E0E0E0 url(../assets/img/like.svg) top 48% right 52% no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            opacity: 0;
+            &:hover {
+                cursor: pointer;
+                background-color: #4F4F4F;
+            }
         }
-    }
+        .download-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: rgba(224, 224, 224, 0.50) url(../assets/img/download.svg) top 10px right 10px no-repeat;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0;
+            &:hover {
+                opacity: .7;
+                background: rgba(224, 224, 224, 0.50);
+            }
+        }
 }
  
 .author, .date {
@@ -115,28 +107,12 @@ $primary-text-color: #000;
     bottom: 20px;
     z-index: 1;
 }
+
 .date {
     position: absolute;
     right: 20px;
     bottom: 20px;
     z-index: 1;
-}
-
-img:hover {
-    transform: scale(1.1);
-    transition: all 1s ease;
-    opacity: 1;
-}
-
-.picture:hover {
-    .like-icon {
-        transition: all 1s ease;
-        opacity: 1;
-    }
-    .download-icon {
-        transition: all 1s ease;
-        opacity: 1;
-    }
 }
 
 .picture::before {
@@ -163,8 +139,48 @@ img:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 3;
 }
 
 
+@media screen and (max-width: 500px) {
+    .blockI-items, .blockII-items, .blockIII-items {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .el {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
 
+// === Animation ===
+// Перший варіант - підключений локально через css та js, другий нижче закоментований
+
+// .colspan {
+//    animation: colanim .8s linear 2s 1;
+// }
+
+// @keyframes colanim {
+//     from {
+//         rotate: 0deg;
+//     }
+//     to {
+//         rotate: 15deg;
+//     }
+// }
+
+// .rowspan {
+//     animation: rowanim .8s linear 2s 1;
+// }
+// @keyframes rowanim {
+//         0% {
+//             transform: scale(1) translateX(100px);
+//         }
+//         50% {
+//             transform: scale(1.1) translateX(400px);
+//         }
+//         100% {
+//              transform: scale(1) translateX(100px);
+//         }
+// }
