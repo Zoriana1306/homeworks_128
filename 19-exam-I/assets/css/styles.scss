@@ -96,25 +96,10 @@ main {
 }
 
 //  === NAVIGATION ===
-// .page-overlay {
-//     opacity: 0;
-//     visibility: visible;
-//  }
-// .menu-penal {
-//     opacity: 0;
-//     visibility: visible;
-// }
-// .mobile-menu {
-//     opacity: 0;
-//     visibility: visible;
-// }
 .hamburger {
      display: none;
 }
-// .panel-top {
-//     display: block;
-// }
-// settings
+
 .page-overlay {
     position: fixed;
     left: 0;
@@ -301,6 +286,7 @@ header {
             align-items: center;
             justify-content: flex-start;
             gap: 121px; 
+            margin-right: 447px;
             .logo {
                 width: 45px;
                 height: 35px;
