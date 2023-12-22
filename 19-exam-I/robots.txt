@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Dissallow: /admin/
+Dissallow: /log/
+Dissallow: /temp/
+Sitemap: https://zoriana1306.github.io/homeworks_128/19-exam-1/sitemap.xml
+
+
+Host: zoriana1306.github.io/homeworks_128/

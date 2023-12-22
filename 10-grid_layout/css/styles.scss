@@ -188,3 +188,30 @@ $primary-text-color: #000;
 //              transform: scale(1) translateX(100px);
 //         }
 // }
+
+
+
+.icons {
+    display: flex;
+}
+
+.training svg {
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #D9D9D9;
+    position: relative;
+}
+
+.symbol-1 {
+    
+    top: 16px;
+    left: 16px;
+}
+
+
+.symbol-2 {
+
+    
+    top: 16px;
+    left: 16px;
+}
