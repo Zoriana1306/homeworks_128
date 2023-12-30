@@ -936,6 +936,9 @@ p {
                     font-size: 0.875rem;
                     line-height: 160%; 
                     letter-spacing: 0.00875rem;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                     &:focus {
                         text-decoration: underline;
                         color: $violet-middle;

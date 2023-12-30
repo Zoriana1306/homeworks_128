@@ -1,0 +1,6 @@
+.homework-list li {
+  list-style-type: disclosure-closed;
+}
+.homework-list li ul li {
+  list-style-type: square;
+}
