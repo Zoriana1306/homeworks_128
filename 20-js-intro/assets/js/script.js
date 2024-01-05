@@ -9,7 +9,7 @@ function task1() {
 function task2() {
     const birthYear = parseInt(prompt("Enter your birth year:"));
     // const currentYear = 2023;
-    const currentYear = newDate().getFullYear();
+    const currentYear = new Date().getFullYear();
     const age = currentYear - birthYear;
     alert(`You are ${age} years old`);
 }
