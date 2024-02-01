@@ -36,13 +36,6 @@ body {
     justify-content: space-between;
     min-height: 100vh;
 }
-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
 main {
     flex-grow: 1;
 }

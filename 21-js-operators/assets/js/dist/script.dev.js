@@ -4,7 +4,7 @@
 function mintask1() {
   var elementOfEquation1 = 0.1;
   var elementOfEquation2 = 0.2;
-  var sumOfEquation = elementOfEquation1 + elementOfEquation2;
+  var sumOfEquation = Math.floor(elementOfEquation1 + elementOfEquation2);
   alert("\u0421\u0443\u043C\u0430 \u0434\u0432\u043E\u0445 \u0437\u043D\u0430\u0447\u0435\u043D\u044C \u0434\u043E\u0440\u0456\u0432\u043D\u044E\u0454 ".concat(sumOfEquation));
 }
 

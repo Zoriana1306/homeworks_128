@@ -1,3 +1,17 @@
 @import '_general.scss';
 
 @import 'fonts.scss';
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    height: 80px;
+    background: lightgrey;
+    h1 {
+        padding: 15px;
+    }
+}

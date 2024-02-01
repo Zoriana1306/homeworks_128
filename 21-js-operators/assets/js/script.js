@@ -3,7 +3,7 @@ function mintask1() {
     const elementOfEquation1 = 0.1;
     const elementOfEquation2 = 0.2;
 
-    const sumOfEquation = (elementOfEquation1 + elementOfEquation2);
+    const sumOfEquation = Math.floor(elementOfEquation1 + elementOfEquation2);
     alert(`Сума двох значень дорівнює ${sumOfEquation}`);
 }
 

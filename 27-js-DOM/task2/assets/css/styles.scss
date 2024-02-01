@@ -1,0 +1,27 @@
+@import '_general.scss';
+
+@import 'fonts.scss';
+
+h2 {
+    margin-top: 50px;
+}
+
+.btn-for-open {
+    margin-top: 40px;
+    margin-left: 60px;
+    color: #fff;
+    background-color: blue;
+    padding: 13px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid black;
+    cursor: pointer;
+    &:hover {
+        color: blue;
+        background-color: #fff;
+        cursor: pointer;
+        transition: all .1s ease-in;
+    }
+}

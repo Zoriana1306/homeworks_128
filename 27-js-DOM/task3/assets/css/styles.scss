@@ -1,0 +1,70 @@
+@import '_general.scss';
+
+@import 'fonts.scss';
+h2 {
+    margin-top: 50px;
+}
+
+.panel {
+    width: 200px;
+    height: 550px;
+    border: 2px solid black;
+    border-radius: 45px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 50px;
+    .grey {
+        background-color: grey;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        margin-top: 10px;
+        box-shadow: 0 0 25px grey;
+    }
+    .red {
+        background-color: red;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        margin-top: 10px;
+        box-shadow: 0 0 25px red;
+    }
+    .yellow {
+        background-color: yellow;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        box-shadow: 0 0 25px yellow;
+    }
+    .green {
+        background-color: green;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 25px green;
+    }
+}
+
+.switch-button {
+    margin-top: 50px;
+    margin-left: 250px;
+    color: black;
+    background-color: violet;
+    padding: 13px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid black;
+    cursor: pointer;
+    &:hover {
+        color: violet;
+        background-color: #fff;
+        cursor: pointer;
+        transition: all .1s ease-in;
+    }
+}

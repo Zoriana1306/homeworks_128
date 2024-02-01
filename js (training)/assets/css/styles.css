@@ -39,14 +39,20 @@ body {
   min-height: 100vh;
 }
 
+main {
+  flex-grow: 1;
+}
+
 header {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 10;
+  text-align: center;
+  height: 80px;
+  background: lightgrey;
 }
-
-main {
-  flex-grow: 1;
+header h1 {
+  padding: 15px;
 }
