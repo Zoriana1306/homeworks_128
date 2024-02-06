@@ -1,4 +1,37 @@
-const playlist = ['"LED ZEPPELIN" - "STAIRWAY TO HEAVEN"', '"QUEEN" - "BOHEMIAN RHAPSODY"', '"LYNYRD SKYNYRD" - "FREE BIRD"', '"DEEP PURPLE" - "SMOKE ON THE WATER"', '"JIMI HENDRIX" - "ALL ALONG THE WATCHTOWER"', '"AC/DC"- "BACK IN BLACK"', '"QUEEN" - "WE WILL ROCK YOU"', '"METALLICA" - "ENTER SANDMAN"'];
+const playlist = [
+    {
+     author: "LED ZEPPELIN",
+     song:"STAIRWAY TO HEAVEN"
+    },
+    {
+     author: "QUEEN",
+     song:"BOHEMIAN RHAPSODY"
+    },
+    {
+     author: "LYNYRD SKYNYRD",
+     song:"FREE BIRD"
+    },
+    {
+     author: "DEEP PURPLE",
+     song:"SMOKE ON THE WATER"
+    },
+    {
+     author: "JIMI HENDRIX",
+     song:"ALL ALONG THE WATCHTOWER"
+    },
+    {
+     author: "AC/DC",
+     song:"BACK IN BLACK"
+    },
+    {
+     author: "QUEEN",
+     song:"WE WILL ROCK YOU"
+    },
+    {
+     author: "METALLICA",
+     song:"ENTER SANDMAN"
+    }
+    ];
 
 const root = document.createElement('div');
 root.id = 'root';
